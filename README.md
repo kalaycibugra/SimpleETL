@@ -13,20 +13,23 @@ EXAMPLE USAGE FOR COMPARE
 
  	-http://localhost:4444/search/geomsource-Photogramm
  	-http://localhost:4444/compare/bin-lt-2000000
-
+    Structure:
+        "/compare/{field}-{op}-{number}"
 EXAMPLE USAGE FOR SEARCH
 
  	-http://localhost:4444/compare/cnstrctyr-gt-2015
  	-http://localhost:4444/search/heightroof-76.93
  	-http://localhost:4444/search/cnstrctyr-2013
-
+    Structure:
+        "/search/{field}-{value}"
 
 EXAMPLE USAGE FOR GETTING AVERAGE AND SUM OF VALUES
 
 
  	-http://localhost:4444/op/avg-bin
  	-http://localhost:4444/op/sum-cnstrctyr
-
+    Structure:
+        /op/{operation}-{field}
 
 Do not use underscore while making a query:
 
